@@ -17,7 +17,7 @@ def _check(text, limit):
         raise ValueError("entry must not pad itself with spaces")
     if len(text) > limit:
         raise ValueError("entry runs past its character limit")
-    for bad in ("\n", "\r", "  "):
+    for bad in ("\n", "\r", "\t", "  "):
         if bad in text:
             raise ValueError("entry must stay a single clean line")
     # Nothing else to prove: a clean single line is the whole entry.
