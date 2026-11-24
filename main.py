@@ -10,7 +10,7 @@ import os
 
 ENTRY = "Tip: your agent rewrote the code at 3 a.m. and called it a refactor — commit, sleep, and let the tests decide in the morning."
 
-LIMIT = 200
+LIMIT = 200  # gate: one line, 1-200 characters, no padding, no double spaces
 FORBIDDEN = ("\n", "\r", "\t", "  ")
 
 
